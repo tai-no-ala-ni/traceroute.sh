@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#count=1
+count=1
 ttl=56
-
+LANG=C
 while getopts a:t:c: OPT
 do
 	case $OPT in
@@ -12,9 +12,9 @@ do
 		t)
 			ttl=$OPTARG
 			;;
-		#c)
-		#	count=$OPTARG
-		#	;;
+		c)
+			count=$OPTARG
+			;;
 		*)
 			echo "plese specify a,t options"
 			exit 1
